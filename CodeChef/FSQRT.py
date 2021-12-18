@@ -1,11 +1,13 @@
 import math
 
 T = int(input())
-if 1 <= T <= 20:
+
+if T>20:
+    print("Invalid input.")
+else:
     for i in range(T):
         N = int(input())
-        if 1<= N <= 10000:
+        if N>10000:
+            print("Invalid input.")
+        else:
             print(round(math.sqrt(N)))
-
-            
-    
